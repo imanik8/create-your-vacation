@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create your vacation</title>
+  <link href="vacation_style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Handlee|Paytone+One" rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2c3e50">
+  <meta name="theme-color" content="#2c3e50">
+
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Create your vacation!</h1>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <div class="col left">
+        <div class="select">
+          <select onchange="changeMe(value)">
+            <option disabled selected>Choose:</option>
+            <option value="men">Men</option>
+            <option value="woman">Woman</option>
+          </select>
+        </div>
+
+        <div class="select">
+          <select id="surround" onchange="changeBackground(value)">
+            <option disabled selected>Choose the surroundings:</option>
+            <option value="beach">Beach</option>
+            <option value="forest">Forest</option>
+            <option value="mountains">Mountains</option>
+          </select>
+        </div>
+
+
+        <div class="select">
+          <select onchange="changeHousing(value)">
+            <option disabled selected>Choose the accommodation:</option>
+            <option value="tent">Tent</option>
+            <option value="hotel">Hotel</option>
+            <option value="cabin">Cabin</option>
+          </select>
+        </div>
+
+        <div class="select">
+          <select onchange="changeCompanion(value)">
+            <option disabled selected>Choose the company:</option>
+            <option value="girlfriend">Girlfriend</option>
+            <option value="boyfriend">Boyfriend</option>
+            <option value="family">Family</option>
+          </select>
+        </div>
+
+        <div class="select">
+          <select onchange="changeWeather(value)">
+            <option disabled selected>Choose the weather:</option>
+            <option value="sun">Sun</option>
+            <option value="rain">Rain</option>
+            <option value="snow">Snow</option>
+          </select>
+        </div>
+
+        <div class="select">
+          <select onchange="changeEquipment(value)">
+            <option disabled selected>Choose the equipment:</option>
+            <option value="parasol">Parasol</option>
+            <option value="campfire">Campfire</option>
+            <option value="ski">a pair of skis</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col right">
+        <div class="img-container">
+          <img id="background" src=" ">
+          <img id="me" src=" ">
+          <img id="housing" src=" ">
+          <img id="companion" src=" ">
+          <img id="equipment" src=" ">
+          <img id="weather" src=" ">
+        </div>
+      </div>
+
+      <button value="Reset" onClick="window.location.reload()">Reset</button>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Created by: Aniket Kumar</p>
+  </footer>
+
+</body>
+</html>
